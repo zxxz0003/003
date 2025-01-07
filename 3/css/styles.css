@@ -1,0 +1,457 @@
+@charset "UTF-8";
+body {
+  background: radial-gradient(circle, #E0E0E0 0%, #000000 100%);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle, #E0E0E0 0%, #000000 100%);
+  overflow: hidden; /* 確保飛出去的圖片不會顯示 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 開場動畫容器 */
+#opening-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* 全黑背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* 確保在最前 */
+  overflow: hidden;
+}
+
+/* 開場動畫圖片樣式 */
+.opening-image {
+  position: absolute;
+  height: 600px;
+  opacity: 0; /* 初始隱藏 */
+  animation: fadeInOut 0.75s ease-in-out forwards;
+}
+
+/* 定義圖片淡入淡出效果 */
+@keyframes fadeInOut {
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1; /* 淡入 */
+  }
+  100% {
+    opacity: 0; /* 淡出 */
+  }
+}
+/* 主頁內容淡入樣式 */
+#main-content {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.vector {
+  position: absolute;
+  width: 100px; /* 設定圖片寬度 */
+  height: 100px; /* 設定圖片高度 */
+  animation: flyOut 1s linear forwards; /* 設置動畫 */
+  top: 50%; /* 垂直居中 */
+  left: 50%; /* 水平居中 */
+  transform: translate(-50%, -50%) rotate(20deg); /* 使圖片居中 */
+}
+
+@keyframes flyOut {
+  0% {
+    top: 50%; /* 從中央開始 */
+    left: 50%; /* 起始位置 */
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 0%; /* 讓圖片飛向右上 */
+    left: 140%; /* 讓圖片飛向右邊 */
+    transform: translate(-50%, -50%) scale(1.5) rotate(20deg);
+  }
+}
+.vector2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut2 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(20deg);
+}
+
+@keyframes flyOut2 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 25%; /* 讓圖片飛向右上，稍微往下偏 */
+    left: 140%;
+    transform: translate(-50%, -50%) scale(1.5) rotate(20deg);
+  }
+}
+.vector3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut3 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(40deg);
+}
+
+@keyframes flyOut3 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 50%; /* 讓圖片飛向右中 */
+    left: 140%;
+    transform: translate(-50%, -50%) scale(1.5) rotate(40deg);
+  }
+}
+.vector4 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut4 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+@keyframes flyOut4 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 75%; /* 讓圖片飛向右下，稍微往上偏 */
+    left: 140%;
+    transform: translate(-50%, -50%) scale(1.5) rotate(60deg);
+  }
+}
+.vector5 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut5 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(80deg);
+}
+
+@keyframes flyOut5 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 100%; /* 讓圖片飛向右下 */
+    left: 140%;
+    transform: translate(-50%, -50%) scale(1.5) rotate(80deg);
+  }
+}
+.vector6 {
+  position: absolute;
+  width: 100px; /* 設定圖片寬度 */
+  height: 100px; /* 設定圖片高度 */
+  animation: flyOut6 1s linear forwards; /* 設置動畫 */
+  top: 50%; /* 垂直居中 */
+  left: 50%; /* 水平居中 */
+  transform: translate(-50%, -50%) rotate(-20deg); /* 使圖片居中 */
+}
+
+@keyframes flyOut6 {
+  0% {
+    top: 50%; /* 從中央開始 */
+    left: 50%; /* 起始位置 */
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 0%; /* 讓圖片飛向左上 */
+    left: -40%; /* 讓圖片飛向左邊 */
+    transform: translate(-50%, -50%) scale(1.5) rotate(-20deg);
+  }
+}
+.vector7 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut7 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+@keyframes flyOut7 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 25%; /* 讓圖片飛向左上，稍微往下偏 */
+    left: -40%; /* 讓圖片飛向左邊 */
+    transform: translate(-50%, -50%) scale(1.5) rotate(-20deg);
+  }
+}
+.vector8 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut8 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-40deg);
+}
+
+@keyframes flyOut8 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 50%; /* 讓圖片飛向左中 */
+    left: -40%; /* 讓圖片飛向左邊 */
+    transform: translate(-50%, -50%) scale(1.5) rotate(-40deg);
+  }
+}
+.vector9 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut9 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+@keyframes flyOut9 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 75%; /* 讓圖片飛向左下，稍微往上偏 */
+    left: -40%; /* 讓圖片飛向左邊 */
+    transform: translate(-50%, -50%) scale(1.5) rotate(-60deg);
+  }
+}
+.vector10 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: flyOut10 1s linear forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-80deg);
+}
+
+@keyframes flyOut10 {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 100%; /* 讓圖片飛向左下 */
+    left: -40%; /* 讓圖片飛向左邊 */
+    transform: translate(-50%, -50%) scale(1.5) rotate(-80deg);
+  }
+}
+.vector,
+.vector2, .vector3, .vector4, .vector5, .vector6,
+.vector7, .vector8, .vector9, .vector10 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; /* 讓動畫無限循環 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vector {
+  animation: flyOut 2s linear infinite;
+}
+
+.vector2 {
+  animation: flyOut2 2s linear infinite;
+}
+
+.vector3 {
+  animation: flyOut3 2s linear infinite;
+}
+
+.vector4 {
+  animation: flyOut4 2s linear infinite;
+}
+
+.vector5 {
+  animation: flyOut5 2s linear infinite;
+}
+
+.vector6 {
+  animation: flyOut6 2s linear infinite;
+}
+
+.vector7 {
+  animation: flyOut7 2s linear infinite;
+}
+
+.vector8 {
+  animation: flyOut8 2s linear infinite;
+}
+
+.vector9 {
+  animation: flyOut9 2s linear infinite;
+}
+
+.vector10 {
+  animation: flyOut10 2s linear infinite;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+
+.image-container {
+  position: relative; /* 設置容器為相對定位 */
+  display: inline-block; /* 讓圖片和文字組合保持居中 */
+}
+
+.ball {
+  display: block;
+  margin-top: 40px;
+  object-fit: cover; /* 圖片保持比例，覆蓋容器 */
+  z-index: 2;
+}
+
+h1 {
+  position: absolute; /* 使用絕對定位讓文字疊加到圖片上 */
+  top: 50%; /* 調整文字位置到圖片的中間 */
+  left: 50%;
+  transform: translate(-50%, -50%); /* 讓文字居中對齊圖片 */
+  font-family: "Impact", sans-serif;
+  font-size: 128px; /* 放大文字大小 */
+  color: #FFFFFF; /* 設定文字顏色為白色 */
+  background: transparent; /* 背景透明 */
+  -webkit-text-fill-color: #f7f4f4; /* 使用白色文字 */
+  letter-spacing: 10px;
+  z-index: 3;
+  /* 使用 text-shadow 模擬立體效果，陰影顏色為紅色 */
+  text-shadow: 6px 6px 12px rgba(255, 87, 51, 0.7), -6px -6px 12px rgba(255, 87, 51, 0.7), 6px -6px 12px rgba(255, 87, 51, 0.7), -6px 6px 12px rgba(255, 87, 51, 0.7), 0 0 16px rgb(255, 87, 51); /* 強化橘色陰影的效果 */
+}
+
+/* 空心圓圈，並隨著圖片一起移動 */
+.fixed-circle {
+  position: absolute; /* 讓圓圈定位在圖片內部 */
+  top: 54%; /* 調整圓圈位置 */
+  left: 50%; /* 圓圈居中 */
+  width: 100%; /* 圓圈的寬度比圖片小，避免壓到圖片 */
+  height: 100%; /* 圓圈的高度比圖片小 */
+  border: 10px solid #FF5733; /* 橘色圓圈邊框 */
+  border-radius: 50%; /* 設置圓形 */
+  background-color: transparent; /* 背景透明 */
+  z-index: -1; /* 圓圈的 z-index 小於圖片，讓圖片顯示在圓圈之上 */
+  transform: translate(-50%, -50%); /* 讓圓圈的中心與圖片居中對齊 */
+  /* 去除 border-image，改為純邊框顏色 */
+  border-image: none;
+  animation: flash 1.9s infinite;
+  /* 加入6個白色陰影 */
+  box-shadow: 0 0 1.5px rgb(255, 87, 51), 0px 0px 3.09px #FF5733, 0px 0px 10.82px #FF5733, 0px 0px 21.64px #FFFFFF, 0px 0px 37.09px #FFFFFF, 0px 0px 64.92px #FFFFFF;
+}
+
+@keyframes flash {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 初始時光暈模糊效果 */
+  }
+  50% {
+    box-shadow: 0 0 1.5px rgb(255, 87, 51), 0px 0px 3.09px #FF5733, 0px 0px 10.82px #FF5733, 0px 0px 21.64px #FFFFFF, 0px 0px 37.09px #FFFFFF, 0px 0px 64.92px #FF5733; /* 中間時光暈強烈 */
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 最後時光暈模糊 */
+  }
+}
+nav ul {
+  display: flex;
+  justify-content: center; /* 讓項目水平居中 */
+  padding: 0;
+  list-style: none; /* 移除項目標記 */
+  font-size: 35px;
+  margin-top: 50px;
+}
+nav ul li {
+  margin: 0 100px; /* 設定連結之間的間距 */
+}
+nav ul li a {
+  text-decoration: underline; /* 設定底線 */
+  text-underline-offset: 10px; /* 調整底線與文字的距離 */
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+/* Player 的初始狀態 */
+.player {
+  position: absolute;
+  top: 70%;
+  left: -300px; /* 隱藏在螢幕左側 */
+  transform: translate(-50%, -50%) rotate(0deg); /* 初始不旋轉 */
+  opacity: 0; /* 初始完全透明 */
+  z-index: 9999; /* 確保在最上層 */
+  pointer-events: none; /* 避免干擾點擊 */
+}
+
+.player img {
+  width: auto; /* 填滿父容器 */
+  height: 200px;
+}
+
+/* 動畫設定 */
+@keyframes player-swing {
+  0% {
+    left: -300px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+  40% {
+    left: 40%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  80% {
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
