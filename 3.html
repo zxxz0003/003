@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Ranking</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #4b4b72);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative; /* Ensures stacking context */
+    }
+
+    /* Background Image Layer */
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      background-size: cover;
+      background-position: center;
+      z-index: -1; /* Ensures it's behind the content */
+      transition: background 0.5s ease; /* Smooth transition */
+    }
+
+    .ranking-container {
+      width: 350px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      z-index: 1; /* Content remains above the background */
+      position: relative; /* Ensure layering above background */
+    }
+
+    .ranking-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #00D9FF;
+      text-transform: uppercase;
+    }
+
+    .ranking-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #2a2a3b, #1c1c2e);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    .ranking-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .ranking-rank,
+    .ranking-name {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Image Layer -->
+  <div class="background-image" id="background"></div>
+
+  <div class="ranking-container">
+    <div class="ranking-title">Top Players</div>
+    <div class="ranking-item" 
+         onmouseover="changeBackground('ball.png')" 
+         onmouseout="resetBackground()">
+      <span class="ranking-rank">1</span>
+      <span class="ranking-name">James</span>
+    </div>
+    <div class="ranking-item" 
+         onmouseover="changeBackground('https://via.placeholder.com/1920x1080?text=Trout')" 
+         onmouseout="resetBackground()">
+      <span class="ranking-rank">2</span>
+      <span class="ranking-name">Trout</span>
+    </div>
+    <div class="ranking-item" 
+         onmouseover="changeBackground('https://via.placeholder.com/1920x1080?text=Bas')" 
+         onmouseout="resetBackground()">
+      <span class="ranking-rank">3</span>
+      <span class="ranking-name">Bas</span>
+    </div>
+  </div>
+
+  <script>
+    const backgroundDiv = document.getElementById('background');
+
+    // Function to change background image
+    function changeBackground(imageUrl) {
+      backgroundDiv.style.background = `url('${imageUrl}') no-repeat center center fixed`;
+      backgroundDiv.style.backgroundSize = 'cover';
+    }
+
+    // Function to reset background to transparent
+    function resetBackground() {
+      backgroundDiv.style.background = 'transparent';
+    }
+  </script>
+</body>
+</html>

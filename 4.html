@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Plate Button with Cat Paw Print</title>
+  <!-- 引入 Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #1e1e2f, #4b4b72);
+    }
+
+    /* 本壘板樣式的按鈕 */
+    .home-plate-btn {
+      position: relative;
+      display: inline-block;
+      padding: 30px 60px;
+      background: linear-gradient(135deg, #C69C6D, #F1E0C6); /* 木質色調 */
+      color: white;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 60, 60, 0.6) inset;
+    }
+
+    /* 貓腳印 - 使用 Font Awesome 圖示 */
+    .home-plate-btn::before {
+      content: '\f1b0'; /* fa-paw */
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      color: white;
+    }
+
+    /* 3D 效果 - 底部陰影 */
+    .home-plate-btn::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      filter: blur(5px);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 50% 100%, 0% 30%);
+      z-index: -1;
+    }
+
+    /* 懸浮效果 */
+    .home-plate-btn:hover {
+      background: linear-gradient(135deg, #F1E0C6, #C69C6D); /* 反轉漸變 */
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 60, 60, 0.8) inset;
+    }
+
+    /* 點擊效果 */
+    .home-plate-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4), 0 0 8px rgba(255, 60, 60, 0.5) inset;
+    }
+  </style>
+</head>
+<body>
+  <button class="home-plate-btn">Home Plate</button>
+</body>
+</html>

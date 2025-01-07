@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Ranking</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #4b4b72);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .ranking-container {
+      width: 350px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .ranking-title {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #00D9FF;
+      text-transform: uppercase;
+    }
+
+    .ranking-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #2a2a3b, #1c1c2e);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .ranking-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .ranking-item:first-child {
+      background: linear-gradient(135deg, #FFD700, #FFC107);
+    }
+
+    .ranking-item:nth-child(2) {
+      background: linear-gradient(135deg, #C0C0C0, #D3D3D3);
+    }
+
+    .ranking-item:nth-child(3) {
+      background: linear-gradient(135deg, #CD7F32, #D2691E);
+    }
+
+    .ranking-rank {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .ranking-name {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ranking-container">
+    <div class="ranking-title">Top Players</div>
+    <div class="ranking-item">
+      <span class="ranking-rank">1</span>
+      <span class="ranking-name">James</span>
+    </div>
+    <div class="ranking-item">
+      <span class="ranking-rank">2</span>
+      <span class="ranking-name">Trout</span>
+    </div>
+    <div class="ranking-item">
+      <span class="ranking-rank">3</span>
+      <span class="ranking-name">Bas</span>
+    </div>
+  </div>
+</body>
+</html>
