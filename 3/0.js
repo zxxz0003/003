@@ -35,16 +35,18 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function (e) {
             e.preventDefault(); // 防止預設跳轉行為
 
-            // 重置動畫
-            player.style.display = "block"; // 顯示圖片
+            const href = this.getAttribute("href"); // 獲取目標頁面 URL
+
+            // 顯示動畫
+            player.style.display = "block";
             player.style.animation = "none"; // 停止舊動畫
             void player.offsetWidth; // 觸發重新渲染（重啟動畫）
-            player.style.animation = "player-swing 2s ease-in-out forwards"; // 加入動畫
+            player.style.animation = "player-swing 2s ease-in-out forwards"; // 加入轉場動畫
 
-            // 動畫結束後隱藏圖片
+            // 動畫結束後跳轉頁面
             setTimeout(() => {
-                player.style.display = "none";
-            }, 2000); // 2秒後隱藏
+                window.location.href = href; // 跳轉到目標頁面
+            }, 2000); // 等待動畫結束（2秒後跳轉）
         });
     });
 });

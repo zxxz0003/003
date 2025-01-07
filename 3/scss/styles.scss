@@ -34,7 +34,8 @@ body {
 /* 開場動畫圖片樣式 */
 .opening-image {
     position: absolute;
-  height: 600px;
+ height: 600px;
+ width: auto;
     opacity: 0; /* 初始隱藏 */
     animation: fadeInOut 0.75s ease-in-out forwards;
 }
@@ -383,7 +384,7 @@ header {
 
 .ball {
     display: block;
-    margin-top: 40px;
+    margin-top: 35px;
    
     object-fit: cover; /* 圖片保持比例，覆蓋容器 */
     z-index: 2;
@@ -391,7 +392,7 @@ header {
 
 h1 {
     position: absolute; /* 使用絕對定位讓文字疊加到圖片上 */
-    top: 50%; /* 調整文字位置到圖片的中間 */
+    top: 55%; /* 調整文字位置到圖片的中間 */
     left: 50%;
     transform: translate(-50%, -50%); /* 讓文字居中對齊圖片 */
     font-family: 'Impact', sans-serif;
@@ -416,8 +417,8 @@ h1 {
     position: absolute; /* 讓圓圈定位在圖片內部 */
     top: 54%; /* 調整圓圈位置 */
     left: 50%; /* 圓圈居中 */
-    width: 100%; /* 圓圈的寬度比圖片小，避免壓到圖片 */
-    height: 100%; /* 圓圈的高度比圖片小 */
+    width: 110%; /* 圓圈的寬度比圖片小，避免壓到圖片 */
+    height: 110%; /* 圓圈的高度比圖片小 */
     border: 10px solid #FF5733; /* 橘色圓圈邊框 */
     border-radius: 50%; /* 設置圓形 */
     background-color: transparent; /* 背景透明 */
@@ -426,7 +427,7 @@ h1 {
     
     /* 去除 border-image，改為純邊框顏色 */
     border-image: none;
-    animation: flash 1.9s infinite; 
+    animation: flash 1.88s infinite; 
     /* 加入6個白色陰影 */
     box-shadow: 
     0 0 1.5px rgba(255, 87, 51, 1), /* 第一個橘色陰影：無偏移，模糊度1.5 */
@@ -461,7 +462,7 @@ nav {
         justify-content: center; /* 讓項目水平居中 */
         padding: 0;
         list-style: none; /* 移除項目標記 */
-        font-size: 35px;
+        font-size: 28px;
         margin-top: 50px;
 
         li {
@@ -470,11 +471,19 @@ nav {
             a {
                 text-decoration: underline; /* 設定底線 */
                 text-underline-offset: 10px; /* 調整底線與文字的距離 */
-                color: #FFFFFF;
-                opacity: 0.8;
+             
+           
+                color: #B0B0B0; /* 設定字體為灰色 */
+    opacity: 0.9;
+    transition: color 0.3s ease, opacity 0.3s ease; /* 增加平滑過渡效果 */
+    
             }
         }
     }
+}
+a:hover {
+    color: #FFFFFF; /* 當滑鼠懸浮時變為白色 */
+    opacity: 1; /* 提高透明度 */
 }
 
 /* Player 的初始狀態 */
