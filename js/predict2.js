@@ -50,3 +50,15 @@ document.querySelectorAll('.left, .right').forEach(item => {
         overlayText.textContent = "預測成功";
     });
 });
+
+
+// navbar
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+});

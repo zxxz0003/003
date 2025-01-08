@@ -151,13 +151,160 @@ nav {
     }
 }
 a:hover {
-    color: #FFFFFF; /* 當滑鼠懸浮時變為白色 */
+    color: #000; /* 當滑鼠懸浮時變為白色 */
    
 }
 
 
 #link1,#link2{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 /*------------------*/
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+   
+    background-color: #f9f9f9;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+
+.vs1,.vs2,.vs3,.vs4,.vs5,.vs6,.vs7,.vs8{
+    width: 149px;
+    height: 44px;
+}
+.mus{
+    width: 40px;
+    height: 40px;
+}
+
+.x1{
+    width: 108px;
+    height: 40px;
+}
+.x3{
+    width: 188px;
+    height: 40px;
+}
+
+.o1{
+    width: 108px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.vs1-16 ,.vs1-15{
+  
+ justify-content: center;
+ flex-direction: row;
+ align-items: center; 
+
+ 
+}
+
+
+img {
+    /* 確保圖片不被強制變成 block */
+    display: inline; /* 默認值，可省略 */
+    margin: 0; /* 確保沒有額外的間距影響 */
+}
+
+
+
+
+.vs1-16 ,.vs1-15{
+    text-align: center; /* 水平置中 */
+    line-height: 60px; /* 設置與父容器高度相等的行高，實現垂直置中 */
+    height: 60px; /* 設定固定高度 */
+}
+
+
+td {
+    text-align: center; /* 水平置中 */
+    vertical-align: middle; /* 垂直置中 */
+}
+
+.vs1-15 img, .vs1-16 img{
+    display: inline; /* 保持行內元素，避免獨占一行 */
+    vertical-align: middle; /* 垂直置中 */
+}
+
+.yes{
+    color: rgb(46, 224, 30);
+}
+.not{
+    color: #B0B0B0;
+}
+.no{
+    color: red;
+}
+
+
+
+
+
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+.hidden {
+    display: none;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    margin-top: 30px;
+    
+}
+.pagination button:hover {
+    background-color: #45a049;
+}
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    position: relative; /* 確保按鈕不受其他元素的影響 */
+    z-index: 1; /* 提升按鈕的層級 */
+}
+#prevPage{
+    margin-right: 50px;
+}
