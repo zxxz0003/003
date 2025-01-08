@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圖片背景程式</title>
+    <style>
+        /* 重置樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('default-bg.jpg'); /* 默認背景圖片 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .controls {
+            margin-bottom: 20px;
+        }
+
+        .upload-label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .upload-label:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        input[type="file"] {
+            display: none; /* 隱藏檔案選擇按鈕 */
+        }
+
+        .content h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <label for="bgUpload" class="upload-label">選擇圖片作為背景</label>
+            <input type="file" id="bgUpload" accept="image/*">
+        </div>
+        <div class="content">
+            <h1>歡迎來到背景更換程式</h1>
+            <p>上傳一張圖片作為背景！</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bgUpload = document.getElementById('bgUpload');
+            const body = document.body;
+
+            bgUpload.addEventListener('change', (event) => {
+                const file = event.target.files[0];
+
+                if (file) {
+                    const reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        // 將圖片設為背景
+                        body.style.backgroundImage = `url('${e.target.result}')`;
+                    };
+
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
