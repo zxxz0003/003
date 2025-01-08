@@ -465,13 +465,11 @@ nav ul li a {
   text-decoration: underline; /* 設定底線 */
   text-underline-offset: 10px; /* 調整底線與文字的距離 */
   color: #B0B0B0; /* 設定字體為灰色 */
-  opacity: 0.9;
   transition: color 0.3s ease, opacity 0.3s ease; /* 增加平滑過渡效果 */
 }
 
 a:hover {
   color: #FFFFFF; /* 當滑鼠懸浮時變為白色 */
-  opacity: 1; /* 提高透明度 */
 }
 
 /* Player 的初始狀態 */
