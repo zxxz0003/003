@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./3/css/teams.min.css">
+    
+</head>
+<style>
+
+
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占滿螢幕寬度 */
+    height: 100vh; /* 占滿螢幕高度 */
+    background: url('./images/chi4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    z-index: -1; /* 放在最底層 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
+    pointer-events: none; /* 防止干擾互動 */
+}
+
+
+
+/* 背景圖片樣式 */
+.background-image2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占滿螢幕寬度 */
+    height: 100vh; /* 占滿螢幕高度 */
+    background: url('./images/pen4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    z-index: -1; /* 放在最底層 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
+    pointer-events: none; /* 防止干擾互動 */
+}
+
+
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">BASEBALL VISION</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="./predict.html">預測</a></li>
+            <li><a href="game.html">賽事</a></li>
+            <li><a href="teams.html">球隊</a></li>
+            <li><a href="rankings.html">排行</a></li>
+            <li><a href="store.html">商城</a></li>
+            <div class="login-links">
+                <li><a href="login.html">登入</a></li>
+                <li><a href="login.html">註冊</a></li>
+            </div>
+            
+        </ul>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="navbar2">
+        <!-- 第一排 -->
+        <div class="row">
+            <div class="container">
+            <a href="#page1"><img src="./images/chi2.png" alt="Page 1" class="back"></a>
+            <div class="background-image"></div>
+        </div>
+        <div class="container">
+            <a href="#page2"><img src="./images/pen2.png" alt="Page 2" class="back"></a>
+            <div class="background-image2"></div>
+        </div>
+
+
+            <a href="#page3"><img src="./images/cat2.png" alt="Page 3"></a>
+            <a href="#page4"><img src="./images/ele2.png" alt="Page 4"></a>
+        </div>
+        <!-- 第二排 -->
+        <div class="row">
+            <a href="#page5"><img src="./images/rab2.png" alt="Page 5"></a>
+            <a href="#page6"><img src="./images/dol2.png" alt="Page 6"></a>
+            <a href="#page7"><img src="./images/mus2.png" alt="Page 7"></a>
+        </div>
+    </div>
+
+    <!-- 頁面區塊 -->
+    <div id="page1" class="section">Page 1 Content</div>
+    <div id="page2" class="section">Page 2 Content</div>
+    <div id="page3" class="section">Page 3 Content</div>
+    <div id="page4" class="section">Page 4 Content</div>
+    <div id="page5" class="section">Page 5 Content</div>
+    <div id="page6" class="section">Page 6 Content</div>
+    <div id="page7" class="section">Page 7 Content</div>
+
+
+
+
+    
+    <script src="../003/js/teams.js"></script>
+</body>
+</html>
