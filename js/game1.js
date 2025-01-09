@@ -11,31 +11,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const eventList = document.getElementById("eventList");
-    const events = document.querySelectorAll(".event");
-    const eventHeight = events[0].offsetHeight; // 單個事件高度
-
-    // 克隆第一個事件，讓輪播無縫
-    const firstEventClone = events[0].cloneNode(true);
-    eventList.appendChild(firstEventClone);
-
+document.addEventListener('DOMContentLoaded', () => {
+    const battingOrderContainer = document.getElementById('battingOrder');
+    const battingNumbers = [
+        { number: '1', name: 'First' },
+        { number: '2', name: 'Second' },
+        { number: '3', name: 'Third' },
+        { number: '4', name: 'Fourth' },
+        { number: '5', name: 'Fifth' },
+        { number: '6', name: 'Sixth' },
+        { number: '7', name: 'Seventh' },
+        { number: '8', name: 'Eighth' },
+        { number: '9', name: 'Ninth' },
+    ];
     let currentIndex = 0;
 
-    setInterval(() => {
-        currentIndex++;
-        eventList.style.transition = "transform 0.6s ease-in-out";
-        eventList.style.transform = `translateY(-${currentIndex * eventHeight}px)`;
+    function showBattingOrder() {
+        if (currentIndex < battingNumbers.length) {
+            const orderElement = document.createElement('div');
+            orderElement.className = 'batting-order';
+            orderElement.style.animationDelay = `${currentIndex * 0.4}s`;
 
-        // 重置到第一個
-        if (currentIndex === events.length) {
-            setTimeout(() => {
-                eventList.style.transition = "none";
-                eventList.style.transform = "translateY(0)";
-                currentIndex = 0;
-            }, 600); // 過渡時間 0.6 秒
+            // 加入數字和英文名稱
+            orderElement.innerHTML = `
+                <div>${battingNumbers[currentIndex].number}</div>
+                <span>${battingNumbers[currentIndex].name}</span>
+            `;
+
+            battingOrderContainer.appendChild(orderElement);
+            currentIndex++;
+            setTimeout(showBattingOrder, 400); // 每0.4秒切換一次
         }
-    }, 2000); // 每2秒切換一次
+    }
+
+    showBattingOrder(); // 開始顯示棒次
 });
