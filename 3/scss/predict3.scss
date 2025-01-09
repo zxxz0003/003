@@ -156,9 +156,6 @@ a:hover {
 }
 
 
-#link1,#link2{
-    margin-top: 100px;
-}
 
 /*------------------*/
 
@@ -168,9 +165,10 @@ a:hover {
 body {
     font-family: Arial, sans-serif;
    
-    background-color: #f9f9f9;
+    background-color:rgb(236, 234, 234)
 }
 table {
+    margin-top: 50px;
     width: 100%;
     border-collapse: collapse;
 
@@ -289,7 +287,7 @@ tr:hover {
     border: none;
     border-radius: 5px;
     margin: 0 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     
 }
 .pagination button:hover {
@@ -301,10 +299,53 @@ tr:hover {
 }
 .pagination {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative; /* 確保按鈕不受其他元素的影響 */
     z-index: 1; /* 提升按鈕的層級 */
 }
 #prevPage{
     margin-right: 50px;
 }
+
+
+
+
+.table-container {
+    margin: 50px auto; // 垂直間距並水平置中
+    margin-top: 40px;
+    padding: 20px; // 容器內邊距
+    padding-top: 0px;
+    background-color: rgba(255, 255, 255, 0.1); // 背景顏色
+    border: 2px solid #4CAF50; // 容器的框線顏色
+    border-radius: 10px; // 圓角邊框
+    width: 90%; // 最大寬度比例
+    max-width: 800px; // 最大固定寬度
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // 容器的陰影效果
+  
+    table {
+      width: 100%; // 表格寬度填滿容器
+      border-collapse: collapse; // 移除單元格間隙
+      background-color: rgba(255, 255, 255, 0.1); // 表格背景顏色
+  
+      th,
+      td {
+        border: 1px solid #ddd; // 單元格邊框
+        padding: 10px; // 單元格內邊距
+        text-align: center; // 文字置中
+      }
+  
+      th {
+        background-color: #4CAF50; // 表頭背景顏色
+        color: white; // 表頭文字顏色
+      }
+  
+      tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.15); // 偶數行背景顏色
+      }
+  
+      tr:hover {
+        background-color: rgba(255, 255, 255, 0.3); // 滑鼠懸停背景顏色
+      }
+    }
+  }
+  
