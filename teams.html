@@ -36,13 +36,91 @@
     left: 0;
     width: 100vw; /* 占滿螢幕寬度 */
     height: 100vh; /* 占滿螢幕高度 */
-    background: url('./images/pen4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    background: url('./images/pen7.png') no-repeat center center / cover; /* 更新圖片路徑 */
     z-index: -1; /* 放在最底層 */
     opacity: 0; /* 預設隱藏 */
     transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
     pointer-events: none; /* 防止干擾互動 */
 }
 
+
+
+
+/* 背景圖片樣式 */
+.background-image3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占滿螢幕寬度 */
+    height: 100vh; /* 占滿螢幕高度 */
+    background: url('./images/cat4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    z-index: -1; /* 放在最底層 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
+    pointer-events: none; /* 防止干擾互動 */
+}
+
+
+/* 背景圖片樣式 */
+.background-image4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占滿螢幕寬度 */
+    height: 100vh; /* 占滿螢幕高度 */
+    background: url('./images/ele4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    z-index: -1; /* 放在最底層 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
+    pointer-events: none; /* 防止干擾互動 */
+}
+
+
+
+
+/* 背景圖片樣式 */
+.background-image5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占滿螢幕寬度 */
+    height: 100vh; /* 占滿螢幕高度 */
+    background: url('./images/rab4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    z-index: -1; /* 放在最底層 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
+    pointer-events: none; /* 防止干擾互動 */
+}
+
+
+/* 背景圖片樣式 */
+.background-image6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占滿螢幕寬度 */
+    height: 100vh; /* 占滿螢幕高度 */
+    background: url('./images/dol4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    z-index: -1; /* 放在最底層 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
+    pointer-events: none; /* 防止干擾互動 */
+}
+
+
+/* 背景圖片樣式 */
+.background-image7 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* 占滿螢幕寬度 */
+    height: 100vh; /* 占滿螢幕高度 */
+    background: url('./images/mus4.png') no-repeat center center / cover; /* 更新圖片路徑 */
+    z-index: -1; /* 放在最底層 */
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.5s ease-in-out; /* 平滑過渡效果 */
+    pointer-events: none; /* 防止干擾互動 */
+}
 
 
 </style>
@@ -82,29 +160,270 @@
             <div class="background-image2"></div>
         </div>
 
+        <div class="container">
+            <a href="#page3"><img src="./images/cat2.png" alt="Page 3" class="back"></a>
+            <div class="background-image3"></div>
+        </div>
 
-            <a href="#page3"><img src="./images/cat2.png" alt="Page 3"></a>
-            <a href="#page4"><img src="./images/ele2.png" alt="Page 4"></a>
+
+        <div class="container">
+            <a href="#page4"><img src="./images/ele2.png" alt="Page 4" class="back"></a>
+            <div class="background-image4"></div>
+        </div>
         </div>
         <!-- 第二排 -->
+
         <div class="row">
-            <a href="#page5"><img src="./images/rab2.png" alt="Page 5"></a>
-            <a href="#page6"><img src="./images/dol2.png" alt="Page 6"></a>
-            <a href="#page7"><img src="./images/mus2.png" alt="Page 7"></a>
+            <div class="container">
+            <a href="#page5"><img src="./images/rab2.png" alt="Page 5" class="back"></a>
+            <div class="background-image5"></div>
+            </div>
+
+            <div class="container">
+            <a href="#page6"><img src="./images/dol2.png" alt="Page 6"  class="back"></a>
+            <div class="background-image6"></div>
+        </div>
+
+        <div class="container">
+            <a href="#page7"><img src="./images/mus2.png" alt="Page 7"  class="back"></a>
+            <div class="background-image7"></div>
+        </div>
+    </div>
+        </div>
+
+    <!-- 頁面區塊 -->
+    <div id="page1" class="section">
+        <img class="emblem" src="./images/chi2.png" alt="full">
+        <div class="interactive-area">
+            <img class="base popup-trigger" data-popup="popup1" src="./images/base1.png" alt="base">
+        </div>
+        <img class="chart" src="./images/c1.png" alt="full">
+        <!-- 遮罩層 -->
+        <div class="overlay hidden" data-popup="popup1"></div>
+        <!-- 彈出視窗 -->
+        <div class="popup hidden" data-popup="popup1">
+            <button class="close-btn">&times;</button>
+            <p>🔥 Blazing Chicks 棒球隊 - 以強勁投球聞名，超越極限的投球壓制！🔥<br>
+                Blazing Chicks的名稱不僅代表著無畏的戰鬥精神，也寓意著每個成員都是在自己領域中發光發熱的佼佼者。他們像火焰一樣炙熱，展現出令人難以忽視的力量與魅力。<br>
+                
+                作為一支注重實力與策略的球隊，Blazing Chicks 擁有一流的投球陣容，每位投手都具備出色的控球能力與多樣的球種。無論是快速球、曲球，還是變速球，球隊的投手都能迅速適應對手的打擊風格，帶來一場場精彩的投球對決。<br>
+                
+                💥 核心投手： 擁有經驗豐富且具威脅的投手，將比賽局勢掌控於指尖，為隊伍締造無數關鍵三振。<br>
+                
+                💥 精湛控球： 每次投球都精確無比，能在關鍵時刻把握每一分機會，讓對手無可奈何。<br>
+                
+                💥 強大的球速與球種變化： 不僅速度快，還能透過各種變化球製造混亂，挑戰任何打者的打擊節奏。
+                Blazing Chicks 透過堅實的投球基礎，將每一場比賽化為對手的挑戰，並以此創造無數令人驚豔的精彩瞬間。隨著投手們的默契與實力逐漸發揮，Blazing Chicks 成為對手最不敢小覷的強敵！<br>
+                
+                
+                重點球員<br>
+                
+                Ethan Blake       <br>
+                Blazing Chicks隊的王牌投手，以出色的球速和精確的控球著稱。每當他站在投手丘上，對手的打者就會感到壓力山大。其標誌性的快速球和滑球讓他成為隊內的防守屏障，也是最可靠的關鍵時刻投手。<br>
+                
+                Maxwell Cruz       <br>
+                擁有驚人的變速球和各種迷人的變化球，讓打者無法預測她的下一顆球是什麼。她的投球風格充滿藝術感，總是能巧妙地調動對手的節奏，讓他們陷入被動局面。他的冷靜和智慧使他成為Blazing Chicks最具策略性的投手之一。<br>
+                
+                
+                Riley Fox     <br>
+                Blazing Chicks的終結者，他的強力投球總能幫助球隊保住勝果。無論面對什麼樣的打者，都能以一顆冷靜、精準的心態出奇制勝。他的直球與曲球組合，無懈可擊，是隊伍信賴的終結者。
+                
+                
+                
+                
+                </p>
+        </div>
+    </div>
+    
+    <div id="page2" class="section">
+        <img class="emblem" src="./images/pen2.png" alt="full">
+        <div class="interactive-area">
+            <img class="base popup-trigger" data-popup="popup2" src="./images/base2.png" alt="base">
+        </div>
+        <img class="chart" src="./images/c2.png" alt="full">
+        <!-- 遮罩層 -->
+        <div class="overlay hidden" data-popup="popup2"></div>
+        <!-- 彈出視窗 -->
+        <div class="popup hidden" data-popup="popup2">
+            <button class="close-btn">&times;</button>
+            <p>❄️「FROST PENGUIN」意為「霜凍企鵝」，這支球隊的名稱象徵寒冷極地中的團結精神。企鵝以其緊密的群體合作著稱，而「FROST」則代表冷靜、堅韌與不可動搖的意志。這些特質成為球隊的核心精神。  <br>
+
+                ❄️  FROST PENGUIN 強調「每一名球員都是不可或缺的」。比賽中，他們善於將個人能力融入整體戰  術，展現出完美的配合。  <br>
+                
+                ❄️  重點球員  <br>
+                Liam Frost   <br>
+                打擊技術出神入化，常在關鍵時刻打破僵局，被譽為「破冰者」。  <br>
+                
+                Ethan White    <br>
+                防守專家，無論是阻截還是傳球，穩如冰川的表現為球隊增添了無數勝利。  <br>
+                
+                Ava Snow  <br>
+                進攻核心，速度與精準兼具，擅長在對方防線中製造破口。  <br>
+                
+
+                </p>
         </div>
     </div>
 
-    <!-- 頁面區塊 -->
-    <div id="page1" class="section">Page 1 Content</div>
-    <div id="page2" class="section">Page 2 Content</div>
-    <div id="page3" class="section">Page 3 Content</div>
-    <div id="page4" class="section">Page 4 Content</div>
-    <div id="page5" class="section">Page 5 Content</div>
-    <div id="page6" class="section">Page 6 Content</div>
-    <div id="page7" class="section">Page 7 Content</div>
 
 
 
+      
+    <div id="page3" class="section">
+        <img class="emblem" src="./images/cat2.png" alt="full">
+        <div class="interactive-area">
+            <img class="base popup-trigger" data-popup="popup3" src="./images/base3.png" alt="base">
+        </div>
+        <img class="chart" src="./images/c3.png" alt="full">
+        <!-- 遮罩層 -->
+        <div class="overlay hidden" data-popup="popup3"></div>
+        <!-- 彈出視窗 -->
+        <div class="popup hidden" data-popup="popup3">
+            <button class="close-btn">&times;</button>
+            <p>
+            Cat Team 是聯盟中實力最堅強的棒球隊，以橘貓作為隊徽與吉祥物，象徵隊伍的靈活性與敏捷度。他們在打擊、投球、防守三方面全能表現，堪稱聯盟中的不敗之師，當之無愧排名第一。隊伍的精神口號是 "Grace, Power, Victory"，代表著每一場比賽都以優雅的身手與強大實力贏得勝利。 <br>
+
+            重點球員 <br>
+     Oliver  Chen <br>
+     本賽季 15 勝 2 敗，ERA 僅 1.85，三振數突破 200 次，領先聯盟。 <br>
+     
+     Emily  Carter <br>
+     全能打者，打擊率 0.338，全壘打 35 支，打點 98 分。她在場上的領導力和關鍵打擊能力，讓球隊在關鍵時刻屢屢得分
+     
+     Leo  Torres <br>
+     跑壘速度驚人，防守範圍極廣，助殺次數高居聯盟第一。打擊方面也穩定輸出，是隊內核心選手之一。
+     
+
+                </p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="page4" class="section">
+
+        <img class="full" src="./images/full4.png" alt="full">
+
+        <img class="emblem" src="./images/ele2.png" alt="full">
+        <div class="interactive-area">
+            <img class="base popup-trigger" data-popup="popup4" src="./images/base4.png" alt="base">
+        </div>
+        <img class="chart" src="./images/c4.png" alt="full">
+        <div class="overlay hidden" data-popup="popup4"></div>
+        <!-- 彈出視窗 -->
+        <div class="popup hidden" data-popup="popup4">
+            <button class="close-btn">&times;</button>
+            <p>
+                🐘 球隊名「Earth Stomper」(大地踐踏者)表達了他們在比賽中壓倒對手、掌控全場的霸氣。隊徽是一頭強壯的大象，象徵著穩健的力量與無可動搖的決心。<br>
+
+                🐘 球隊特色<br>
+                Earth Stomper 擅長打擊，球員平均打擊率高居聯盟榜首，長打能力更是驚人。他們以精準的攻擊策略，總能在關鍵時刻突破對手防線，是聯盟中最具觀賞性的球隊之一。<br>
+                
+                🐘 重點球員<br>
+                Raymond球隊隊長，重炮手，以強大的擊球力量和穩定的表現著稱。他在過去三個賽季中累計超過 100 支全壘打，被譽為聯盟最具威脅的打者。<br>
+                
+                Jack新秀打者，以速度和靈活著稱。他的出色反應能力使他能快速應對各種球路，是球隊未來的重要核心。
+     
+
+                </p>
+        </div>
+
+
+
+    </div>
+   
+
+
+    
+    <div id="page5" class="section">
+        <img class="emblem" src="./images/rab2.png" alt="full">
+        <div class="interactive-area">
+            <img class="base popup-trigger" data-popup="popup5" src="./images/base5.png" alt="base">
+        </div>
+        <img class="chart" src="./images/c5.png" alt="full">
+        <!-- 遮罩層 -->
+        <div class="overlay hidden" data-popup="popup5"></div>
+        <!-- 彈出視窗 -->
+        <div class="popup hidden" data-popup="popup5">
+            <button class="close-btn">&times;</button>
+            <p>
+                🐇 SILVER HOPPER(銀色跳躍者)棒球隊 是速度的化身，銀色的奇蹟！<br>
+                以銀色兔子為隊伍象徵，SILVER HOPPER 不僅代表著敏捷和速度，更展現了團結合作的精神。無論是球場上的每一次奔跑，還是激烈的搶分戰，都以最快速度迎向勝利！<br>
+                
+                🐇重點球員<br>
+                Jack  Lee <br>
+                身高190公分的外野手，擁有驚人的腿部爆發力，短距離衝刺僅需2.9秒！Jack 是球場上的「風之子」，擅長攔截飛球並快速傳球回壘。<br>
+                
+                Emily Chen 隊伍中的偷壘專家，身高168公分的他身材輕盈、動作迅速，擁有一流的場上觀察力與決策能力。Emily 在緊要關頭總能搶得分秒之差，改變比賽局勢。
+
+                </p>
+        </div>
+    </div>
+
+
+
+ 
+
+
+    <div id="page6" class="section">
+        <img class="emblem" src="./images/dol2.png" alt="full">
+        <div class="interactive-area">
+            <!-- 使用唯一的 data-popup 值 -->
+            <img class="base popup-trigger" data-popup="popup6" src="./images/base6.png" alt="base">
+        </div>
+        <img class="chart" src="./images/c6.png" alt="full">
+        
+        <!-- 遮罩層 -->
+        <div class="overlay hidden" data-popup="popup6"></div>
+        
+        <!-- 彈出視窗 -->
+        <div class="popup hidden" data-popup="popup6">
+            <button class="close-btn">&times;</button>
+            <p>
+                🐬OCEAN MIND 以海豚的敏捷與智慧為象徵，是一支擅長用策略與團隊合作掌控比賽的隊伍。每一次出擊都精心布局，每一個動作都展現深思熟慮的智慧與果斷。這不僅是一場比賽，更是一場策略與實力的完美結合。<br>
+
+                🐬重點球員<br>
+                Dylan<br>
+                是球場上的戰術專家，他能快速預測對手的動作並準確攔截。他的每一步都像導航般精準，帶領隊伍防守無懈可擊。<br>
+                
+                Ethan Chen<br>
+                Ethan 是場上的智囊，擁有無與倫比的投球技術與心理戰術能力。他的每一球都暗藏玄機，讓對手難以捉摸
+            </p>
+        </div>
+    </div>
+    
+    <div id="page7" class="section">
+        <img class="emblem" src="./images/mus2.png" alt="full">
+        <div class="interactive-area">
+            <!-- 使用唯一的 data-popup 值 -->
+            <img class="base popup-trigger" data-popup="popup7" src="./images/base7.png" alt="base">
+        </div>
+        <img class="chart" src="./images/c7.png" alt="full">
+        
+        <!-- 遮罩層 -->
+        <div class="overlay hidden" data-popup="popup7"></div>
+        
+        <!-- 彈出視窗 -->
+        <div class="popup hidden" data-popup="popup7">
+            <button class="close-btn">&times;</button>
+            <p>
+                Storm Spores (風暴孢子)以其快速崛起和猛烈的進攻風格著稱，球隊彷彿風暴中的孢子，迅速擴散並掌控比賽局勢。他們強調速度和靈活性，無論是跑壘、守備還是打擊，皆以敏捷和團隊協作見長。<br>
+
+                重點球員<br>
+           Milburn<br>
+           擁有如風暴般凌厲的快速球和內外角變化球，善於壓制強力打者。<br>
+           
+           Ethan Wang<br>
+           左右開弓的打擊能力，擅長在關鍵時刻建功，時常轟出關鍵全壘打<br>
+           
+           Woodie<br>
+           穩定的防守與高超的配球策略，激勵隊友並掌控比賽節奏。
+            </p>
+        </div>
+    </div>
+    
 
     
     <script src="../003/js/teams.js"></script>

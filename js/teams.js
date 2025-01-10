@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+/*滾動到下面*/ 
 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.internal-navbar a');
@@ -47,6 +47,53 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: 'smooth' }); // 平滑滾動
             }
+        });
+    });
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const popupTriggers = document.querySelectorAll('.popup-trigger');
+    const overlays = document.querySelectorAll('.overlay');
+    const closeButtons = document.querySelectorAll('.close-btn');
+
+    // 打開對應的彈出視窗
+    popupTriggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            const popupId = trigger.dataset.popup;
+            const popup = document.querySelector(`.popup[data-popup="${popupId}"]`);
+            const overlay = document.querySelector(`.overlay[data-popup="${popupId}"]`);
+
+            if (popup && overlay) {
+                popup.classList.remove('hidden');
+                overlay.classList.remove('hidden');
+            }
+        });
+    });
+
+    // 點擊遮罩層關閉彈出視窗
+    overlays.forEach(overlay => {
+        overlay.addEventListener('click', () => {
+            overlay.classList.add('hidden');
+            const popup = document.querySelector(`.popup[data-popup="${overlay.dataset.popup}"]`);
+            if (popup) popup.classList.add('hidden');
+        });
+    });
+
+    // 點擊關閉按鈕關閉彈出視窗
+    closeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const popup = button.parentElement;
+            const popupId = popup.dataset.popup;
+            const overlay = document.querySelector(`.overlay[data-popup="${popupId}"]`);
+
+            popup.classList.add('hidden');
+            if (overlay) overlay.classList.add('hidden');
         });
     });
 });
