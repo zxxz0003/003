@@ -158,13 +158,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000; /* 位於上方 */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  height: 80px;
   transition: transform 0.3s ease; /* 平滑顯示和隱藏效果 */
 }
 

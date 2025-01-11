@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // 依序讓每張圖片淡入淡出
     images.forEach((image) => {
         image.style.animationDelay = `${delay}s`;
-        delay += 1.5; // 每張圖片延遲1.5秒
+        delay += 0.5; // 每張圖片延遲1.5秒
     });
 
     // 等待所有動畫結束後切換到主頁
@@ -50,3 +50,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+
+
+
+
+
+
+
+

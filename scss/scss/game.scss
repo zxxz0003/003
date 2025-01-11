@@ -167,11 +167,11 @@ body {
     justify-content: center; /* 垂直居中 */
     align-items: center; /* 水平居中 */
     margin: 0 45px;
-    background: rgba(223, 221, 221, 0.39);
+    background: cornsilk;
     border-radius: 20px;
    width: 300px;
    
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    
 
 
     backdrop-filter: blur(10px);
@@ -326,7 +326,7 @@ transform: translate(-50%, -50%); /* 居中偏移 */
 .scoreboard-container {
     text-align: center;
     padding: 20px 20px 30px;
-    background: rgba(255, 255, 255, 0.075);
+    background: #355E3B;
     border-radius: 15px;
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -361,7 +361,7 @@ transform: translate(-50%, -50%); /* 居中偏移 */
 color: #fff;}
 
 .scoreboard th {
-    background-color: #444;
+
     
     font-weight:900;
 
@@ -369,7 +369,7 @@ color: #fff;}
     
 }
 .t1{
-  color:#FFA500 ;
+  color:#ff5100 ;
 }
 .t2{
     color: #FFFF66;
