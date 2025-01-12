@@ -146,8 +146,18 @@ h1{display: flex;
     font-size: 30px;
     margin: 120px 0 60px 0px;
     animation: glow 1s infinite alternate;
+    animation: fadeIn 2s ease-in-out; /* 2秒淡入 */
 
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .container1{
     display: flex;
    width: 700px;
@@ -161,6 +171,7 @@ h1{display: flex;
     padding: 40px; 
     border-radius: 40px;
     margin-bottom: 100px;
+    animation: slideInFromLeft 1.5s ease-in-out; 
    .r1{
 display: flex;
 
@@ -182,7 +193,16 @@ background-color: #3C3838;
    }
   
 }
-
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%); /* 從螢幕左側外開始 */
+        opacity: 0; /* 初始完全透明 */
+    }
+    to {
+        transform: translateX(0); /* 移動到原始位置 */
+        opacity: 1; /* 完全可見 */
+    }
+}
 
 .r3,.r4,.r5,.r6,.r7,.r8,.r9{
     display: flex;
@@ -286,6 +306,7 @@ border-radius: 10px;
     padding: 40px; 
     border-radius: 40px;
     margin-bottom: 100px;
+    animation: slideInFromLeft 1.5s ease-in-out 1.5s; 
    .p1,.p2,.p3,.p4,.p5,.p6,.p7{
 display: flex;
 

@@ -170,8 +170,17 @@ h1 {
   font-size: 30px;
   margin: 120px 0 60px 0px;
   animation: glow 1s infinite alternate;
+  animation: fadeIn 2s ease-in-out; /* 2秒淡入 */
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .container1 {
   display: flex;
   width: 700px;
@@ -185,6 +194,7 @@ h1 {
   padding: 40px;
   border-radius: 40px;
   margin-bottom: 100px;
+  animation: slideInFromLeft 1.5s ease-in-out;
 }
 .container1 .r1 {
   display: flex;
@@ -204,6 +214,16 @@ h1 {
   margin-left: 100px;
 }
 
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* 從螢幕左側外開始 */
+    opacity: 0; /* 初始完全透明 */
+  }
+  to {
+    transform: translateX(0); /* 移動到原始位置 */
+    opacity: 1; /* 完全可見 */
+  }
+}
 .r3, .r4, .r5, .r6, .r7, .r8, .r9 {
   display: flex;
   align-items: center;
@@ -282,6 +302,7 @@ h1 {
   padding: 40px;
   border-radius: 40px;
   margin-bottom: 100px;
+  animation: slideInFromLeft 1.5s ease-in-out 1.5s;
 }
 .container2 .p1, .container2 .p2, .container2 .p3, .container2 .p4, .container2 .p5, .container2 .p6, .container2 .p7 {
   display: flex;
