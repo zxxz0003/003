@@ -40,6 +40,14 @@ body {
     animation: fadeInOut 0.75s ease-in-out forwards;
 }
 
+
+
+
+
+
+
+
+
 /* 淡入淡出效果 */
 @keyframes fadeInOut {
     20% {
@@ -380,6 +388,7 @@ header {
 .image-container {
     position: relative; 
     display: inline-block; 
+   
 }
 
 .ball {
