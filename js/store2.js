@@ -21,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
         mainContent.style.display = 'block'; // 顯示主頁內容
         body.style.transition = 'background-color 1s ease'; // 添加平滑過渡
         body.style.backgroundColor = 'white'; // 將背景設為白色
-    }, 5300); // 確保與動畫總時長一致
+    }, 5800); // 確保與動畫總時長一致
 });

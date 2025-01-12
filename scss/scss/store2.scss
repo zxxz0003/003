@@ -189,7 +189,7 @@ body {
     border-radius: 50%;
     transform: scale(0);
     opacity: 0;
-    animation: light-expand 2s ease forwards 2s; /* 延遲 3 秒後擴散 */
+    animation: light-expand 2s ease forwards 2.8s; /* 延遲 3 秒後擴散 */
 }
 
 /* 圖片樣式 */
@@ -202,7 +202,7 @@ body {
     height: auto; /* 保持圖片比例 */
     opacity: 0;
    
-    animation: image2-fade-in 2s ease forwards 3s; /* 延遲 5.5 秒後淡入 */
+    animation: image2-fade-in 2s ease forwards 3.5s; /* 延遲 5.5 秒後淡入 */
 }
 
 .final-image {
@@ -214,7 +214,7 @@ body {
     height: auto;
     opacity: 0;
     
-    animation: image-fade-in 2s ease forwards 3.5s; /* 延遲 6 秒後淡入 */
+    animation: image-fade-in 2s ease forwards 4s; /* 延遲 6 秒後淡入 */
 }
 
 /* 淡入淡出動畫 */
