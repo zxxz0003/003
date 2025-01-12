@@ -303,6 +303,12 @@ body {
 }
 
 /*--------------商品----------------------*/
+.clo {
+  width: 200px; /* 設置固定寬度 */
+  height: auto; /* 保持比例 */
+  display: block; /* 確保圖片沒有多餘間隙 */
+}
+
 .clothes {
   display: flex;
   align-items: center;
@@ -372,4 +378,5 @@ body {
 .banner {
   width: 100%;
   height: auto;
+  display: block; /* 避免多餘間隙 */
 }/*# sourceMappingURL=store2.css.map */
