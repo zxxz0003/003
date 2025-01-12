@@ -82,10 +82,33 @@ body {
 /* 開場動畫圖片樣式 */
 .opening-image {
   position: absolute;
-  height: 600px;
-  width: auto;
   opacity: 0; /* 初始隱藏 */
   animation: fadeInOut 0.75s ease-in-out forwards;
+}
+
+.opening-image1 {
+  width: 300.32px;
+  height: auto;
+}
+
+.opening-image2 {
+  width: 268px;
+  height: auto;
+}
+
+.opening-image3 {
+  width: 668.55px;
+  height: auto;
+}
+
+.opening-image4 {
+  width: 580.09px;
+  height: auto;
+}
+
+.opening-image5 {
+  width: 477.8px;
+  height: auto;
 }
 
 /* 淡入淡出效果 */
