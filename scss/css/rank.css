@@ -169,8 +169,7 @@ h1 {
   color: #fff;
   font-size: 30px;
   margin: 120px 0 60px 0px;
-  animation: glow 1s infinite alternate;
-  animation: fadeIn 2s ease-in-out; /* 2秒淡入 */
+  animation: fadeIn 3s ease-in-out; /* 2秒淡入 */
 }
 
 @keyframes fadeIn {
@@ -280,14 +279,6 @@ h1 {
   width: 294px;
 }
 
-@keyframes glow {
-  0% {
-    text-shadow: #fff;
-  }
-  100% {
-    text-shadow: 0 0 20px #ff8c00, 0 0 40px #ff3d00;
-  }
-}
 /*----------區塊2------------*/
 .container2 {
   display: flex;
