@@ -304,9 +304,9 @@ body {
 
 /*--------------商品----------------------*/
 .clo {
-  width: 200px; /* 設置固定寬度 */
-  height: auto; /* 保持比例 */
-  display: block; /* 確保圖片沒有多餘間隙 */
+  width: 200px;
+  height: auto;
+  display: block;
 }
 
 .clothes {

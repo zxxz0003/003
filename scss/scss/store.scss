@@ -138,6 +138,11 @@ body {
 
 
 /*--------------商品----------------------*/
+.clo {
+    width: 200px; 
+    height: auto; 
+    display: block; 
+}
 
 
 .clothes {
@@ -197,4 +202,5 @@ body {
 .banner{
     width: 100%;
     height: auto;
+    display: block; /* 避免多餘間隙 */
 }
