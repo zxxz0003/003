@@ -422,6 +422,8 @@ header {
 .ball {
   display: block;
   margin-top: 35px;
+  width: 699px;
+  height: auto;
   object-fit: cover;
   z-index: 2;
 }
@@ -447,8 +449,8 @@ h1 {
   position: absolute;
   top: 54%;
   left: 50%;
-  width: 110%;
-  height: 110%;
+  width: 768.89px;
+  height: 673.19px;
   border: 10px solid #FF5733;
   border-radius: 50%;
   background-color: transparent;
