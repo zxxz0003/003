@@ -290,4 +290,12 @@ body {
   font-size: 100px;
   cursor: pointer;
   color: #fff;
+}
+
+body {
+  background-color: black;
+}
+
+.row1, .row2, .row3 {
+  background-color: black !important;
 }/*# sourceMappingURL=store.css.map */

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         openingAnimation.style.display = 'none'; // 隱藏動畫容器
         mainContent.style.display = 'block'; // 顯示主頁內容
         body.style.transition = 'background-color 1s ease'; // 添加平滑過渡
-        body.style.backgroundColor = 'white'; // 將背景設為白色
+        body.style.backgroundColor = '#F7FDFF'; // 將背景設為白色
     }, 5800); // 確保與動畫總時長一致
 });
 

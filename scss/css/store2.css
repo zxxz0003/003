@@ -443,4 +443,16 @@ body {
   font-size: 100px;
   cursor: pointer;
   color: #fff;
+}
+
+/* Row 的背景顏色設定 */
+.row1, .row2, .row3 {
+  background-color: #F7FDFF !important;
+}
+
+/* Clothes 的背景顏色設定 */
+.clothes1, .clothes2, .clothes3,
+.clothes4, .clothes5, .clothes6,
+.clothes7, .clothes8, .clothes9 {
+  background-color: #ffffff; /* 維持白色背景 */
 }/*# sourceMappingURL=store2.css.map */
