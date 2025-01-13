@@ -354,9 +354,9 @@ body, html {
 
 .popup p {
   color: white;
-  font-size: 30px;
+  font-size: 22px;
   padding: 100px;
-  line-height: 60px;
+  line-height: 40px;
 }
 
 .popup.hidden,
