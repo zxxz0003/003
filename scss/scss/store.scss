@@ -129,12 +129,20 @@ body {
     justify-content: center;
     margin-top: 80px;
     gap: 200px;
-    a{
+    a {
         font-size: 22px;
+        color: #FF6B6B; 
+        
+      
     }
+    
+    a:hover {
+        color: #FFD93D;
+        
+    }
+    
+    
 }
-
-
 
 
 /*--------------商品----------------------*/
@@ -197,10 +205,23 @@ body {
 .clothes5:hover .clo,
 .clothes6:hover .clo,
 .clothes7:hover .clo {
-    transform: scale(2); /* 圖片放大 10% */
+    transform: scale(2); 
 }
 .banner{
     width: 100%;
     height: auto;
-    display: block; /* 避免多餘間隙 */
+    display: block; 
+}
+
+
+
+
+.clothes div {
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clothes div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

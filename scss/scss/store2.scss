@@ -143,6 +143,7 @@ body {
     
     height: 100vh;
     transition: background-color 1s ease; /* 平滑背景顏色過渡 */
+    
 }
 
 /* 開場動畫容器 */
@@ -283,8 +284,16 @@ body {
     justify-content: center;
     margin-top: 80px;
     gap: 200px;
-    a{
+    a {
         font-size: 22px;
+        color: #FF6B6B; 
+        
+      
+    }
+    
+    a:hover {
+        color: #FFD93D;
+        
     }
 }
 
@@ -376,3 +385,20 @@ body {
     height: auto;
     display: block; /* 避免多餘間隙 */
 }
+
+
+
+
+
+
+.clothes div {
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clothes div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
