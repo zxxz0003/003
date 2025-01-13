@@ -393,4 +393,54 @@ body {
 .clothes div:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*--------------彈窗-----------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.modal h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.modal p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 400px;
+  font-size: 100px;
+  cursor: pointer;
+  color: #fff;
 }/*# sourceMappingURL=store2.css.map */
